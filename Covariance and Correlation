@@ -1,0 +1,17 @@
+age_groups <- c("5-6 years", "7-8 years", "9-10 years")
+preferences <- matrix(c(18, 22, 20, 2, 28, 40, 20, 10, 40), nrow = 3, byrow = TRUE)
+colnames(preferences) <- c("A", "B", "C")
+rownames(preferences) <- age_groups
+
+cov_BC <- cov(preferences[, "B"], preferences[, "C"])
+
+cov_matrix <- cov(preferences)
+
+cor_BC <- cor(preferences[, "B"], preferences[, "C"])
+
+cor_matrix <- cor(preferences)
+
+cov_BC
+cov_matrix
+cor_BC
+cor_matrix
